@@ -1,0 +1,154 @@
+/* Globale Rules */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(0, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+  padding-top: 100px;
+  padding-bottom: 30px;
+  position: relative;
+}
+/* End Globale Rules */
+.faq {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .faq {
+    display: block;
+    padding: 25px;
+    width: fit-content;
+    margin: 100px auto;
+    margin: 40px 15px;
+  }
+}
+.faq .left > img {
+  position: absolute;
+  top: 38%;
+  left: -10%;
+  z-index: 3;
+}
+@media (max-width: 991px) {
+  .faq .left > img {
+    width: 80px;
+    top: -31px;
+    left: 48%;
+    transform: translateX(-142%);
+  }
+}
+.faq .left .box {
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+@media (max-width: 991px) {
+  .faq .left .box {
+    overflow: visible;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 100px;
+  }
+}
+.faq .left .box::after {
+  position: absolute;
+  content: url("../images/bg-pattern-desktop.svg");
+  top: -60%;
+  left: -118%;
+}
+@media (max-width: 991px) {
+  .faq .left .box::after {
+    position: absolute;
+    content: url(../images/bg-pattern-mobile.svg);
+    top: -110px;
+    left: 86px;
+  }
+}
+.faq .left .box img {
+  position: relative;
+  left: -3%;
+  transform: translate(-10%, 13%);
+  z-index: 2;
+}
+@media (max-width: 991px) {
+  .faq .left .box img {
+    position: absolute;
+    width: 250px;
+    top: -230px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.faq .right {
+  padding: 30px 55px 30px 0px;
+}
+@media (max-width: 991px) {
+  .faq .right {
+    width: fit-content;
+    padding: 0px;
+    text-align: center;
+  }
+}
+.faq .right h1 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 10px 0;
+}
+.faq .right .faq-info {
+  max-width: 350px;
+  margin: 20px 10px 20px 0px;
+  position: relative;
+  padding-bottom: 5px;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  cursor: pointer;
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .faq .right .faq-info {
+    max-width: 300px;
+  }
+}
+.faq .right .faq-info:hover p {
+  color: hsl(14, 88%, 65%);
+}
+.faq .right .faq-info p {
+  color: hsl(238, 29%, 16%);
+  display: inline-block;
+  margin: 0px 30px 15px 0px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.faq .right .faq-info button {
+  border: none;
+  background-color: transparent;
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: rotate(0deg);
+}
+.faq .right .faq-info span {
+  color: hsl(238, 29%, 16%);
+  display: none;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+.faq .right .faq-info button.hide {
+  transform: rotate(180deg);
+}
