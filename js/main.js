@@ -38,8 +38,8 @@ const hide = (evnts) => {
   console.log(evnts.target.parentElement.querySelector("p"));
   // Span Display none
   evnts.target.parentElement.querySelector("span").style.display = "none";
-  // Change The P Element fontWeight To Normale
-  evnts.target.parentElement.querySelector("p").style.fontWeight = "normale";
+  // Change The P Element fontWeight To Normal
+  evnts.target.parentElement.querySelector("p").style.fontWeight = "normal";
   // Rotate The Btn To 0deg
   evnts.target.style.transform = "rotate(0deg)";
 };
