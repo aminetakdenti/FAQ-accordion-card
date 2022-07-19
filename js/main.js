@@ -31,15 +31,18 @@ const show = (evnts) => {
   evnts.target.parentElement.querySelector("span").style.display = "block";
   // Change The P Element fontWeight To Bold
   evnts.target.parentElement.querySelector("p").style.fontWeight = "bold";
+  console.log(evnts.target.parentElement.querySelector("p"));
   // Rotate The Btn To 180deg
-  evnts.target.style.transform = "rotate(180deg)";
+  evnts.target.parentElement.querySelector("button").style.transform =
+    "rotate(180deg)";
 };
 const hide = (evnts) => {
   console.log(evnts.target.parentElement.querySelector("p"));
   // Span Display none
   evnts.target.parentElement.querySelector("span").style.display = "none";
-  // Change The P Element fontWeight To Normal
+  // Change The P Element fontWeight To Normale
   evnts.target.parentElement.querySelector("p").style.fontWeight = "normal";
   // Rotate The Btn To 0deg
-  evnts.target.style.transform = "rotate(0deg)";
+  evnts.target.parentElement.querySelector("button").style.transform =
+    "rotate(0deg)";
 };
