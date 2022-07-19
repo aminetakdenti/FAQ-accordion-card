@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/aminetakdenti/FAQ-accordion-card.git](https://your-solution-url.com)
-- Live Site URL: [https://aminetakdenti.github.io/FAQ-accordion-card/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/aminetakdenti/FAQ-accordion-card.git]
+- Live Site URL: [https://aminetakdenti.github.io/FAQ-accordion-card/]
 
 ## My process
 
